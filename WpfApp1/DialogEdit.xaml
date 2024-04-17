@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp1.DialogEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="DialogEdit" Height="450" Width="450">
+    <Grid Background="#FF9FA9FD">
+        <TextBox HorizontalAlignment="Left" Margin="195,92,0,0" TextWrapping="Wrap" Text="{Binding Jmeno,Mode=OneWay}" VerticalAlignment="Top" Width="120" x:Name="ProJmeno"/>
+
+        <TextBox HorizontalAlignment="Left" Margin="195,125,0,0" TextWrapping="Wrap" Text="{Binding Primeni,Mode=OneWay}" VerticalAlignment="Top" Width="120" x:Name="ProPrimeni"/>
+
+        <DatePicker HorizontalAlignment="Left" Margin="195,157,0,0" VerticalAlignment="Top" Width="120" SelectedDate="{Binding DatumNarozeni,Mode=OneWay}" x:Name="ProDatum"/>
+        <Button Content="Uložit" HorizontalAlignment="Left" Margin="123,277,0,0" VerticalAlignment="Top" Height="40" Width="80" Click="Button_Click"/>
+        
+        <Button Content="Zahodit" HorizontalAlignment="Left" Margin="255,277,0,0" VerticalAlignment="Top" Height="40" Width="80" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
